@@ -1,0 +1,1 @@
+This is an app to calculate needed steps to calibrate the extruder values of your 3-D printer.  First is the steps/mm, then calibrate the flow.  The app has an about page that has some detail on the terminal commands to run for calibration.

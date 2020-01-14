@@ -1,3 +1,3 @@
 This is an app to calculate needed steps to calibrate the extruder values of your 3-D printer.  First is the steps/mm, then calibrate the flow.  The app has an about page that has some detail on the terminal commands to run for calibration.
 
-For the .desktop file, you'll have to change the exec path to where you place it in your system. As well as the icon path, where you place the icon image.
+For the .desktop file, you'll have to change the exec path to where you place it in your system. As well as the icon path, where you place the icon image.  You should have a desktop shortcut the next time you restart your system. This works for a linux based system.  I'm not too sure about mac.  

@@ -1,7 +1,0 @@
-[Desktop Entry]
-
-Name=Extruder Calibration
-Comment=Calculator for extruder calibration
-Exec=python3 /home/mystinker08/Desktop/my_apps/extruder_main.py
-Icon=/home/mystinker08/Documents/Icons/extruder_icon.png
-Type=Application

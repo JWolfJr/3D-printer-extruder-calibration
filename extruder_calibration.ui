@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>737</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(156, 156, 156);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="extruded_dist">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>The amount of mm of extruded filament</string>
+    </property>
+    <property name="text">
+     <string>Measured Filament</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="original_steps">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Extruder steps in the M503 eeprom</string>
+    </property>
+    <property name="text">
+     <string>Original Steps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="calc_steps">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>40</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculated Steps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cur_mult">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Number in slicer for flow rate</string>
+    </property>
+    <property name="text">
+     <string>Current Extrusion Multiplier</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="des_mult">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>390</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Enter desired single wall width</string>
+    </property>
+    <property name="text">
+     <string>Desired Extrusion Width</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="calc_extrusion">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>350</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculated Extrusion Multiplier</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="act_mult">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Enter measured wall width</string>
+    </property>
+    <property name="text">
+     <string>Actual Extrusion Width</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="steps_btn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Press to calculate steps/mm</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(0, 170, 255);</string>
+    </property>
+    <property name="text">
+     <string>Calculate Steps</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mult_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>530</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Press to calculate extrusion multiplier</string>
+    </property>
+    <property name="text">
+     <string>Calculate Multiplier</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="extruded_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);</string>
+    </property>
+    <property name="maximum">
+     <number>120</number>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="original_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>130</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);</string>
+    </property>
+    <property name="maximum">
+     <double>140.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="current_extr_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>310</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);</string>
+    </property>
+    <property name="maximum">
+     <number>110</number>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="desired_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>400</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="actual_extrusion_spinBox">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>470</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="calculated_steps">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>110</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="calculated_extrusion">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>420</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(210, 210, 210);
+border-color: rgb(35, 35, 35);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>737</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuQuit">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="statusTip">
+    <string>Quits the program and closes window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="statusTip">
+    <string>About this app</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>extruded_spinBox</tabstop>
+  <tabstop>original_spinBox</tabstop>
+  <tabstop>steps_btn</tabstop>
+  <tabstop>current_extr_spinBox</tabstop>
+  <tabstop>desired_spinBox</tabstop>
+  <tabstop>actual_extrusion_spinBox</tabstop>
+  <tabstop>mult_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

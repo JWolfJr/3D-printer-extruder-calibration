@@ -2,6 +2,6 @@
 
 Name=Extruder Calibration
 Comment=Calculator for extruder calibration
-Exec=python3 your/path/to/extruder_main.py
-Icon=/your/path/to/extruder_icon.png
+Exec=python3 /path/to/extruder_main.py
+Icon=/path/to/extruder_icon.png
 Type=Application

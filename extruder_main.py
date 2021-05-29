@@ -25,13 +25,14 @@ class sub(QMainWindow, Ui_MainWindow):
         left = 120 - dist
         corr = 100 / left
         act = self.original_spinBox.value()
-        new = float(corr) * float(act)
+        new = round(corr, 2) * round(act, 2)
         self.calculated_steps.setText(str(new))
 
 
     def flow(self):
         calc_extr = self.current_extr_spinBox.value() * self.desired_spinBox.value() / self.actual_extrusion_spinBox.value()
-        self.calculated_extrusion.setText(str(calc_extr))
+        #self.calculated_extrusion.setText(str(calc_extr))
+        self.calculated_extrusion.setText(str(round(calc_extr, 2)))
 
 
     def show_about(self):

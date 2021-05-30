@@ -33,7 +33,7 @@ class Ui_MainWindow(object):
         self.des_mult.setGeometry(QtCore.QRect(30, 390, 200, 31))
         self.des_mult.setObjectName("des_mult")
         self.calc_extrusion = QtWidgets.QLabel(self.centralwidget)
-        self.calc_extrusion.setGeometry(QtCore.QRect(490, 350, 200, 31))
+        self.calc_extrusion.setGeometry(QtCore.QRect(490, 350, 211, 31))
         self.calc_extrusion.setObjectName("calc_extrusion")
         self.act_mult = QtWidgets.QLabel(self.centralwidget)
         self.act_mult.setGeometry(QtCore.QRect(30, 470, 200, 31))
@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.steps_btn.setStyleSheet("selection-background-color: rgb(0, 170, 255);")
         self.steps_btn.setObjectName("steps_btn")
         self.mult_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.mult_btn.setGeometry(QtCore.QRect(30, 530, 121, 31))
+        self.mult_btn.setGeometry(QtCore.QRect(30, 530, 141, 31))
         self.mult_btn.setObjectName("mult_btn")
         self.extruded_spinBox = QtWidgets.QSpinBox(self.centralwidget)
         self.extruded_spinBox.setGeometry(QtCore.QRect(230, 30, 81, 31))
@@ -52,24 +52,24 @@ class Ui_MainWindow(object):
         self.extruded_spinBox.setMaximum(120)
         self.extruded_spinBox.setObjectName("extruded_spinBox")
         self.original_spinBox = QtWidgets.QDoubleSpinBox(self.centralwidget)
-        self.original_spinBox.setGeometry(QtCore.QRect(230, 130, 91, 31))
+        self.original_spinBox.setGeometry(QtCore.QRect(230, 120, 81, 31))
         self.original_spinBox.setStyleSheet("background-color: rgb(210, 210, 210);\n"
 "border-color: rgb(35, 35, 35);")
         self.original_spinBox.setMaximum(140.0)
         self.original_spinBox.setObjectName("original_spinBox")
         self.current_extr_spinBox = QtWidgets.QSpinBox(self.centralwidget)
-        self.current_extr_spinBox.setGeometry(QtCore.QRect(240, 310, 91, 31))
+        self.current_extr_spinBox.setGeometry(QtCore.QRect(240, 305, 81, 31))
         self.current_extr_spinBox.setStyleSheet("background-color: rgb(210, 210, 210);\n"
 "border-color: rgb(35, 35, 35);")
         self.current_extr_spinBox.setMaximum(110)
         self.current_extr_spinBox.setObjectName("current_extr_spinBox")
         self.desired_spinBox = QtWidgets.QDoubleSpinBox(self.centralwidget)
-        self.desired_spinBox.setGeometry(QtCore.QRect(240, 400, 91, 31))
+        self.desired_spinBox.setGeometry(QtCore.QRect(240, 390, 81, 31))
         self.desired_spinBox.setStyleSheet("background-color: rgb(210, 210, 210);\n"
 "border-color: rgb(35, 35, 35);")
         self.desired_spinBox.setObjectName("desired_spinBox")
         self.actual_extrusion_spinBox = QtWidgets.QDoubleSpinBox(self.centralwidget)
-        self.actual_extrusion_spinBox.setGeometry(QtCore.QRect(240, 470, 91, 31))
+        self.actual_extrusion_spinBox.setGeometry(QtCore.QRect(240, 470, 81, 31))
         self.actual_extrusion_spinBox.setStyleSheet("background-color: rgb(210, 210, 210);\n"
 "border-color: rgb(35, 35, 35);\n"
 "")
@@ -93,7 +93,7 @@ class Ui_MainWindow(object):
         self.line.setObjectName("line")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 737, 16))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 737, 24))
         self.menubar.setObjectName("menubar")
         self.menuQuit = QtWidgets.QMenu(self.menubar)
         self.menuQuit.setObjectName("menuQuit")
@@ -122,7 +122,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Extruder Calibrater"))
         self.extruded_dist.setStatusTip(_translate("MainWindow", "The amount of mm of extruded filament"))
         self.extruded_dist.setText(_translate("MainWindow", "Measured Filament"))
         self.original_steps.setStatusTip(_translate("MainWindow", "Extruder steps in the M503 eeprom"))

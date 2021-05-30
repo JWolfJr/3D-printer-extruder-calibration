@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Extruder Calibrater</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(156, 156, 156);</string>
@@ -99,7 +99,7 @@
      <rect>
       <x>490</x>
       <y>350</y>
-      <width>200</width>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
@@ -147,7 +147,7 @@
      <rect>
       <x>30</x>
       <y>530</y>
-      <width>121</width>
+      <width>141</width>
       <height>31</height>
      </rect>
     </property>
@@ -179,8 +179,8 @@ border-color: rgb(35, 35, 35);</string>
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>130</y>
-      <width>91</width>
+      <y>120</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -196,8 +196,8 @@ border-color: rgb(35, 35, 35);</string>
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>310</y>
-      <width>91</width>
+      <y>305</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -213,8 +213,8 @@ border-color: rgb(35, 35, 35);</string>
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>400</y>
-      <width>91</width>
+      <y>390</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -228,7 +228,7 @@ border-color: rgb(35, 35, 35);</string>
      <rect>
       <x>240</x>
       <y>470</y>
-      <width>91</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -292,7 +292,7 @@ border-color: rgb(35, 35, 35);</string>
      <x>0</x>
      <y>0</y>
      <width>737</width>
-     <height>16</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuQuit">

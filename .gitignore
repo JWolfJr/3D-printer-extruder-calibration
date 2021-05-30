@@ -1,2 +1,3 @@
 extruder_app_WS.code-workspace
 __pycache__/
+.vscode/

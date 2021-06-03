@@ -14,29 +14,51 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(737, 667)
-        MainWindow.setStyleSheet("background-color: rgb(156, 156, 156);")
+        MainWindow.setStyleSheet("QWidget#MainWindow{\n"
+"background-color:qlineargradient(spread:pad, x1:0.125, y1:0.176136, x2:0.916667, y2:0.897727, stop:0 rgba(54, 54, 54, 224), stop:1 rgba(210, 210, 210, 224));}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.extruded_dist = QtWidgets.QLabel(self.centralwidget)
         self.extruded_dist.setGeometry(QtCore.QRect(40, 30, 141, 31))
+        self.extruded_dist.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.extruded_dist.setObjectName("extruded_dist")
         self.original_steps = QtWidgets.QLabel(self.centralwidget)
         self.original_steps.setGeometry(QtCore.QRect(40, 120, 101, 31))
+        self.original_steps.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.original_steps.setObjectName("original_steps")
         self.calc_steps = QtWidgets.QLabel(self.centralwidget)
         self.calc_steps.setGeometry(QtCore.QRect(490, 40, 121, 31))
+        self.calc_steps.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.calc_steps.setObjectName("calc_steps")
         self.cur_mult = QtWidgets.QLabel(self.centralwidget)
-        self.cur_mult.setGeometry(QtCore.QRect(30, 300, 180, 41))
+        self.cur_mult.setGeometry(QtCore.QRect(30, 300, 191, 41))
+        self.cur_mult.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.cur_mult.setObjectName("cur_mult")
         self.des_mult = QtWidgets.QLabel(self.centralwidget)
         self.des_mult.setGeometry(QtCore.QRect(30, 390, 200, 31))
+        self.des_mult.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.des_mult.setObjectName("des_mult")
         self.calc_extrusion = QtWidgets.QLabel(self.centralwidget)
         self.calc_extrusion.setGeometry(QtCore.QRect(490, 350, 211, 31))
+        self.calc_extrusion.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.calc_extrusion.setObjectName("calc_extrusion")
         self.act_mult = QtWidgets.QLabel(self.centralwidget)
         self.act_mult.setGeometry(QtCore.QRect(30, 470, 200, 31))
+        self.act_mult.setStyleSheet("background-color: rgb(165, 156, 156);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 5px;")
         self.act_mult.setObjectName("act_mult")
         self.steps_btn = QtWidgets.QPushButton(self.centralwidget)
         self.steps_btn.setGeometry(QtCore.QRect(40, 180, 111, 31))

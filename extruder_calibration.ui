@@ -285,7 +285,8 @@ border-color: rgb(35, 35, 35);
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(210, 210, 210);
-border-color: rgb(35, 35, 35);</string>
+border-color: rgb(35, 35, 35);
+border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>
@@ -302,7 +303,8 @@ border-color: rgb(35, 35, 35);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(210, 210, 210);
-border-color: rgb(35, 35, 35);</string>
+border-color: rgb(35, 35, 35);
+border-radius: 5px;</string>
     </property>
     <property name="text">
      <string/>

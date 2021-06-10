@@ -99,13 +99,15 @@ class Ui_MainWindow(object):
         self.calculated_steps = QtWidgets.QLabel(self.centralwidget)
         self.calculated_steps.setGeometry(QtCore.QRect(490, 110, 121, 31))
         self.calculated_steps.setStyleSheet("background-color: rgb(210, 210, 210);\n"
-"border-color: rgb(35, 35, 35);")
+"border-color: rgb(35, 35, 35);\n"
+"border-radius: 5px;")
         self.calculated_steps.setText("")
         self.calculated_steps.setObjectName("calculated_steps")
         self.calculated_extrusion = QtWidgets.QLabel(self.centralwidget)
         self.calculated_extrusion.setGeometry(QtCore.QRect(490, 420, 121, 31))
         self.calculated_extrusion.setStyleSheet("background-color: rgb(210, 210, 210);\n"
-"border-color: rgb(35, 35, 35);")
+"border-color: rgb(35, 35, 35);\n"
+"border-radius: 5px;")
         self.calculated_extrusion.setText("")
         self.calculated_extrusion.setObjectName("calculated_extrusion")
         self.line = QtWidgets.QFrame(self.centralwidget)

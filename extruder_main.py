@@ -21,7 +21,6 @@ class sub(QMainWindow, Ui_MainWindow):
     
     def extrude(self):
         dist = self.extruded_spinBox.value()
-        #corr = 100 / dist
         left = 120 - dist
         corr = 100 / left
         act = self.original_spinBox.value()

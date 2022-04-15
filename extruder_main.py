@@ -37,7 +37,7 @@ class sub(QMainWindow, Ui_MainWindow):
     def show_about(self):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
-        msg.setText("This is an app to dial in your extruder. Use M83 to set the extruder to relative mode. Then M503 to retrieve current settings. M500 to save.")
+        msg.setText("This app helps to dial in your extruder value. Hover over each input for exact instruction on how to get needed value. Basic commands are as follows. Use M83 to set the extruder to relative mode. Then M503 to retrieve current settings. M500 to save.")
         msg.setWindowTitle("About this extruder app!")
         msg.setStandardButtons(QMessageBox.Ok)
         

@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Extruder Calibrater</string>
   </property>
+  <property name="windowOpacity">
+   <double>0.800000000000000</double>
+  </property>
   <property name="styleSheet">
    <string notr="true">QWidget#MainWindow{
 background-color:qlineargradient(spread:pad, x1:0.125, y1:0.176136, x2:0.916667, y2:0.897727, stop:0 rgba(54, 54, 54, 224), stop:1 rgba(210, 210, 210, 224));}</string>
@@ -28,7 +31,7 @@ background-color:qlineargradient(spread:pad, x1:0.125, y1:0.176136, x2:0.916667,
      </rect>
     </property>
     <property name="statusTip">
-     <string>The amount of mm of extruded filament</string>
+     <string>The amount in mm of measured filament after M83, G1 F50 E100</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(165, 156, 156);
@@ -37,6 +40,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Measured Filament</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="original_steps">
@@ -49,7 +55,7 @@ border-radius: 5px;</string>
      </rect>
     </property>
     <property name="statusTip">
-     <string>Extruder steps in the M503 eeprom</string>
+     <string>Extruder steps in the M503 eeprom read-out</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(165, 156, 156);
@@ -59,13 +65,16 @@ border-radius: 5px;</string>
     <property name="text">
      <string>Original Steps</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="calc_steps">
     <property name="geometry">
      <rect>
       <x>490</x>
       <y>40</y>
-      <width>121</width>
+      <width>131</width>
       <height>31</height>
      </rect>
     </property>
@@ -77,13 +86,16 @@ border-radius: 5px;</string>
     <property name="text">
      <string>Calculated Steps</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="cur_mult">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>300</y>
-      <width>191</width>
+      <width>201</width>
       <height>41</height>
      </rect>
     </property>
@@ -97,6 +109,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Current Extrusion Multiplier</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="des_mult">
@@ -119,13 +134,16 @@ border-radius: 5px;</string>
     <property name="text">
      <string>Desired Extrusion Width</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="calc_extrusion">
     <property name="geometry">
      <rect>
       <x>490</x>
       <y>350</y>
-      <width>211</width>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
@@ -136,6 +154,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Calculated Extrusion Multiplier</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="act_mult">
@@ -157,6 +178,9 @@ border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Actual Extrusion Width</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="steps_btn">
